@@ -1,2 +1,2 @@
-# composer-lib-starter
-for me.
+# calendering
+Generate calendar data.
