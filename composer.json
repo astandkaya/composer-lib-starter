@@ -1,16 +1,15 @@
 {
-    "name": "astandkaya/[ここに名前]",
-    "description": "[ここに説明]",
+    "name": "astandkaya/t_pkg",
+    "description": "t_desc",
     "type": "library",
-    "keywords": [
-    ],
+    "keywords": [],
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "[ここにソースとかネームスペースとか]\\": "src/[ここにソースとかネームスペースとか]"
+            "t_ns\\": "src/t_ns"
         },
         "files": [
-            "src/[ここにソースとかネームスペースとか]/helpers.php"
+            "src/t_ns/helpers.php"
         ]
     },
     "autoload-dev": {
@@ -34,6 +33,10 @@
         "pestphp/pest": "^4.1"
     },
     "scripts": {
+        "starter-setup": "php setup.php",
+        "post-update-cmd": [
+            "@starter-setup"
+        ],
         "test": "pest",
         "stan": "phpstan analyse",
         "cs": "phpcs ./",
