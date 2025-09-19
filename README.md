@@ -1,2 +1,4 @@
-# calendering
-Generate calendar data.
+# composer-lib-starter
+
+Composerライブラリを作るときのテンプレート
+
